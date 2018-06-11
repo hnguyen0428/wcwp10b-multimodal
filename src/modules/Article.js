@@ -22,6 +22,11 @@ class Article extends Component {
 
     componentDidMount() {
         let parentWidth = this.refs.articleContainer.clientWidth;
+
+        if (isMobile) {
+            parentWidth -= 20;
+        }
+
         let parentHeight = parentWidth / 16 * 9;
         this.setState({
             videoWidth: parentWidth,
