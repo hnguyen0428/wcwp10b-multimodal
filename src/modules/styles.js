@@ -83,7 +83,7 @@ export const styles = {
     },
     supportButton: {
         fontSize: '20px',
-        
+
         color: 'white'
     },
     supportModal: {

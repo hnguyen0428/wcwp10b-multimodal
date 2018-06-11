@@ -121,6 +121,20 @@ class Article extends Component {
                             the people who are in power to listen. So when you’re in a position to affect these kinds of
                             issue, think twice.
                         </p>
+
+                        <h3>References:</h3>
+                        <a href="https://www.cnbc.com/2016/09/16/future-of-farming-driverless-tractors-ag-robots.html">
+                            https://www.cnbc.com/2016/09/16/future-of-farming-driverless-tractors-ag-robots.html
+                        </a>
+                        <br/>
+                        <a href="https://www.theguardian.com/technology/2017/oct/04/robots-artificial-intelligence-machines-us-survey">
+                            https://www.theguardian.com/technology/2017/oct/04/robots-artificial-intelligence-machines-us-survey
+                        </a>
+                        <br/>
+                        <a href="https://eh.net/encyclopedia/economic-history-of-tractors-in-the-united-states/ ">
+                            https://eh.net/encyclopedia/economic-history-of-tractors-in-the-united-states/
+                        </a>
+
                     </div>
                 </div>
 
