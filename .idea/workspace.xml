@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aafa6651-4988-4230-806c-8a5a4fefa754" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/Article.js" afterPath="$PROJECT_DIR$/src/modules/Article.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/styles.js" afterPath="$PROJECT_DIR$/src/modules/styles.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -78,8 +77,8 @@
       <file leaf-file-name="Article.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/modules/Article.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="994">
-              <caret line="132" column="29" lean-forward="false" selection-start-line="132" selection-start-column="29" selection-end-line="132" selection-end-column="29" />
+            <state relative-caret-position="895">
+              <caret line="137" column="135" lean-forward="false" selection-start-line="137" selection-start-column="135" selection-end-line="137" selection-end-column="135" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -738,12 +737,12 @@
       <option name="presentableId" value="Default" />
       <updated>1528687394858</updated>
       <workItem from="1528687397187" duration="14878000" />
-      <workItem from="1528721498405" duration="7674000" />
+      <workItem from="1528721498405" duration="7835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22552000" />
+    <option name="totallyTimeSpent" value="22713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="66" y="22" width="1854" height="1178" extended-state="6" />
@@ -1064,8 +1063,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/Article.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="994">
-          <caret line="132" column="29" lean-forward="false" selection-start-line="132" selection-start-column="29" selection-end-line="132" selection-end-column="29" />
+        <state relative-caret-position="895">
+          <caret line="137" column="135" lean-forward="false" selection-start-line="137" selection-start-column="135" selection-end-line="137" selection-end-column="135" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

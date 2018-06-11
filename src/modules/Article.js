@@ -134,6 +134,10 @@ class Article extends Component {
                         <a href="https://eh.net/encyclopedia/economic-history-of-tractors-in-the-united-states/ ">
                             https://eh.net/encyclopedia/economic-history-of-tractors-in-the-united-states/
                         </a>
+                        <br/>
+                        <a href="https://qz.com/726667/cheap-robots-are-coming-for-our-farm-jobs-by-taking-the-most-brutal-tasks-first/">
+                            https://qz.com/726667/cheap-robots-are-coming-for-our-farm-jobs-by-taking-the-most-brutal-tasks-first/
+                        </a>
 
                     </div>
                 </div>
