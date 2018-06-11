@@ -173,7 +173,7 @@ class Home extends Component {
                     title="Sign here to show your support"
                 >
                     <Input
-                        type='text' maxLength={30}
+                        type='text' maxLength={300}
                         error={this.state.emailError}
                         value={this.state.email}
                         onChange={this.inputChange}

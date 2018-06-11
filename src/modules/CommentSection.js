@@ -43,7 +43,7 @@ class CommentSection extends Component {
             <div>
                 <div style={styles.commentInputContainer}>
                     <Input
-                        type='text' multiline maxLength={250}
+                        type='text' multiline maxLength={1000}
                         value={this.state.commentText}
                         onChange={this.inputChange}
                         style={styles.commentInputField}

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aafa6651-4988-4230-806c-8a5a4fefa754" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/CommentSection.js" afterPath="$PROJECT_DIR$/src/modules/CommentSection.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/Home.js" afterPath="$PROJECT_DIR$/src/modules/Home.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-182">
-              <caret line="112" column="51" lean-forward="false" selection-start-line="112" selection-start-column="51" selection-end-line="112" selection-end-column="51" />
+            <state relative-caret-position="694">
+              <caret line="175" column="50" lean-forward="true" selection-start-line="175" selection-start-column="50" selection-end-line="175" selection-end-column="50" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -51,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentSection.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CommentSection.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/modules/CommentSection.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="634">
-              <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="24" selection-end-line="50" selection-end-column="61" />
+              <caret line="45" column="62" lean-forward="false" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -159,11 +160,11 @@
         <option value="$PROJECT_DIR$/src/network/Comment.js" />
         <option value="$PROJECT_DIR$/src/modules/CommentCell.js" />
         <option value="$PROJECT_DIR$/src/modules/CommentContainer.js" />
-        <option value="$PROJECT_DIR$/src/modules/CommentSection.js" />
         <option value="$PROJECT_DIR$/src/modules/styles.js" />
         <option value="$PROJECT_DIR$/src/modules/Article.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/modules/Home.js" />
+        <option value="$PROJECT_DIR$/src/modules/CommentSection.js" />
       </list>
     </option>
   </component>
@@ -748,12 +749,12 @@
       <option name="presentableId" value="Default" />
       <updated>1528687394858</updated>
       <workItem from="1528687397187" duration="14878000" />
-      <workItem from="1528721498405" duration="8781000" />
+      <workItem from="1528721498405" duration="9005000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23659000" />
+    <option name="totallyTimeSpent" value="23883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="66" y="22" width="1854" height="1178" extended-state="6" />
@@ -1037,16 +1038,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/CommentSection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="24" selection-end-line="50" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/styles.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="949">
@@ -1075,8 +1066,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-182">
-          <caret line="112" column="51" lean-forward="false" selection-start-line="112" selection-start-column="51" selection-end-line="112" selection-end-column="51" />
+        <state relative-caret-position="694">
+          <caret line="175" column="50" lean-forward="true" selection-start-line="175" selection-start-column="50" selection-end-line="175" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/CommentSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="45" column="62" lean-forward="false" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
