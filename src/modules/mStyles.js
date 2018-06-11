@@ -42,7 +42,8 @@ export const mStyles = {
         backgroundColor: '#F3F3F3'
     },
     articleContainer: {
-        width: '88%',
+        width: '90%',
+        margin: '0 auto',
         marginTop: '10px',
         marginBottom: '10px',
         paddingTop: '10px',
