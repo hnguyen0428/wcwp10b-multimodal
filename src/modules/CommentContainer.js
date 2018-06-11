@@ -1,9 +1,12 @@
+import {isMobile} from 'react-device-detect';
 import React, { Component } from 'react';
 import {styles} from './styles';
+import {mStyles} from './mStyles';
 import ReactList from 'react-list';
 
 import CommentCell from './CommentCell';
 import moment from 'moment';
+
 
 import {database} from '../config/firebase';
 
@@ -66,7 +69,7 @@ class CommentContainer extends Component {
         }
 
         return (
-            <div style={styles.commentCellsContainer}>
+            <div style={isMobile ? mStyles.commentCellsContainer : styles.commentCellsContainer}>
                 <div style={{overflow: 'auto', maxHeight: 800}}>
                     <ReactList
                         itemRenderer={this.renderItem}

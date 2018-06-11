@@ -1,7 +1,9 @@
+import {isMobile} from 'react-device-detect';
 import React, { Component } from 'react';
 import {Button, IconButton} from 'react-toolbox/lib/button';
 import {Input} from 'react-toolbox/lib/input';
 import {styles} from './styles';
+import {mStyles} from './mStyles';
 
 import {database} from '../config/firebase';
 import moment from 'moment';
@@ -41,7 +43,7 @@ class CommentSection extends Component {
     render() {
         return (
             <div>
-                <div style={styles.commentInputContainer}>
+                <div style={isMobile ? mStyles.commentInputContainer : styles.commentInputContainer}>
                     <Input
                         type='text' multiline maxLength={1000}
                         value={this.state.commentText}

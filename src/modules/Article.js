@@ -1,6 +1,8 @@
+import {isMobile} from 'react-device-detect';
 import React, { Component } from 'react';
 import {Image} from 'react-bootstrap';
 import {styles} from './styles';
+import {mStyles} from './mStyles';
 import ReactPlayer from 'react-player';
 
 
@@ -31,9 +33,9 @@ class Article extends Component {
         return (
             <div>
                 <div style={styles.articleBackground}>
-                    <div style={styles.articleContainer}>
+                    <div style={isMobile ? mStyles.articleContainer : styles.articleContainer}>
                         <h2>Author: Hoang Nguyen</h2>
-                        <p style={styles.articleText}>
+                        <p style={isMobile ? mStyles.articleText : styles.articleText}>
                             Mechanization of agriculture has widely been known as an effective way to increase farm
                             productivity. It has also had negative perceptions from people because of its potential to
                             reduce employment rate. But why does mechanization matter? With the rising issues of
@@ -53,12 +55,12 @@ class Article extends Component {
                     </div>
                 </div>
 
-                <div style={styles.tToHorseImageContainer}>
+                <div style={isMobile ? mStyles.tToHorseImageContainer : styles.tToHorseImageContainer}>
                     <Image src={tractorHorseChart} style={styles.centerImage} responsive/>
                 </div>
 
                 <div style={styles.articleBackground}>
-                    <div style={styles.articleContainer}>
+                    <div style={isMobile ? mStyles.articleContainer : styles.articleContainer}>
                         <p style={styles.articleText}>
                             Here, we see that with the invention of farm tractors, horses and mules were heavily
                             replaced and in approximately 50 years, the number of tractors is 9 times more than that of
@@ -76,12 +78,12 @@ class Article extends Component {
                     </div>
                 </div>
 
-                <div style={styles.costWeedingImageContainer}>
+                <div style={isMobile ? mStyles.costWeedingImageContainer : styles.costWeedingImageContainer}>
                     <Image src={costWeedingChart} style={styles.centerImage} responsive/>
                 </div>
 
                 <div style={styles.articleBackground}>
-                    <div style={styles.articleContainer} ref="articleContainer">
+                    <div style={isMobile ? mStyles.articleContainer : styles.articleContainer} ref="articleContainer">
                         <p style={styles.articleText}>
                             Here we can see that the cost of using human labor is growing more and more over the year
                             while the cost using robotic labor is decreasing. The robot can do the job more efficiently
@@ -123,21 +125,41 @@ class Article extends Component {
                         </p>
 
                         <h3>References:</h3>
-                        <a href="https://www.cnbc.com/2016/09/16/future-of-farming-driverless-tractors-ag-robots.html">
-                            https://www.cnbc.com/2016/09/16/future-of-farming-driverless-tractors-ag-robots.html
-                        </a>
+
+                        <div style={mStyles.anchorTag}>
+                            <a href="https://www.cnbc.com/2016/09/16/future-of-farming-driverless-tractors-ag-robots.html">
+                                https://www.cnbc.com/2016/09/16/future-of-farming-driverless-tractors-ag-robots.html
+                            </a>
+                        </div>
+
+
                         <br/>
-                        <a href="https://www.theguardian.com/technology/2017/oct/04/robots-artificial-intelligence-machines-us-survey">
-                            https://www.theguardian.com/technology/2017/oct/04/robots-artificial-intelligence-machines-us-survey
-                        </a>
                         <br/>
-                        <a href="https://eh.net/encyclopedia/economic-history-of-tractors-in-the-united-states/ ">
-                            https://eh.net/encyclopedia/economic-history-of-tractors-in-the-united-states/
-                        </a>
+
+                        <div style={mStyles.anchorTag}>
+                            <a style={mStyles.anchorTag} href="https://www.theguardian.com/technology/2017/oct/04/robots-artificial-intelligence-machines-us-survey">
+                                https://www.theguardian.com/technology/2017/oct/04/robots-artificial-intelligence-machines-us-survey
+                            </a>
+                        </div>
+
+
                         <br/>
-                        <a href="https://qz.com/726667/cheap-robots-are-coming-for-our-farm-jobs-by-taking-the-most-brutal-tasks-first/">
-                            https://qz.com/726667/cheap-robots-are-coming-for-our-farm-jobs-by-taking-the-most-brutal-tasks-first/
-                        </a>
+                        <br/>
+
+                        <div style={mStyles.anchorTag}>
+                            <a style={mStyles.anchorTag} href="https://eh.net/encyclopedia/economic-history-of-tractors-in-the-united-states/ ">
+                                https://eh.net/encyclopedia/economic-history-of-tractors-in-the-united-states/
+                            </a>
+                        </div>
+
+                        <br/>
+                        <br/>
+
+                        <div style={mStyles.anchorTag}>
+                            <a href="https://qz.com/726667/cheap-robots-are-coming-for-our-farm-jobs-by-taking-the-most-brutal-tasks-first/">
+                                https://qz.com/726667/cheap-robots-are-coming-for-our-farm-jobs-by-taking-the-most-brutal-tasks-first/
+                            </a>
+                        </div>
 
                     </div>
                 </div>
