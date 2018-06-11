@@ -24,7 +24,7 @@ class Home extends Component {
             email: '',
             initialDataLoaded: false,
             supporters: {},
-            invalidEmail: false
+            emailError: ''
         };
     }
 
@@ -93,7 +93,13 @@ class Home extends Component {
             let supporters = this.state.supporters;
             if (supporters[this.state.email] !== undefined) {
                 this.setState({
-                    invalidEmail: true
+                    emailError: 'You\'ve already signed :)'
+                });
+                return;
+            }
+            else if (!this.validateEmail(this.state.email)) {
+                this.setState({
+                    emailError: 'Please enter a valid email address'
                 });
                 return;
             }
@@ -105,8 +111,8 @@ class Home extends Component {
                     this.fetchSupporters();
                     this.setState({
                         active: !this.state.active,
-                        invalidEmail: false,
-                        email: ''
+                        email: '',
+                        emailError: ''
                     });
                 });
         }
@@ -117,6 +123,11 @@ class Home extends Component {
         this.setState({
             email: value
         });
+    };
+
+
+    validateEmail = (email) => {
+        return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
     };
 
 
@@ -163,7 +174,7 @@ class Home extends Component {
                 >
                     <Input
                         type='text' maxLength={30}
-                        error={this.state.invalidEmail ? 'You\'ve already signed :)' : ''}
+                        error={this.state.emailError}
                         value={this.state.email}
                         onChange={this.inputChange}
                         style={styles.commentInputField}
