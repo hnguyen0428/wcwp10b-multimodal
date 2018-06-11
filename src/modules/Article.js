@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Image} from 'react-bootstrap';
 import {styles} from './styles';
+import ReactPlayer from 'react-player';
 
 
 const tractorHorseChart = require('../assets/tractor_to_horses.jpg');
@@ -8,6 +9,24 @@ const costWeedingChart = require('../assets/cost_of_weeding.png');
 
 
 class Article extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state ={
+            videoWidth: 800,
+            videoHeight: 600
+        };
+    }
+
+    componentDidMount() {
+        let parentWidth = this.refs.articleContainer.clientWidth;
+        let parentHeight = parentWidth / 16 * 9;
+        this.setState({
+            videoWidth: parentWidth,
+            videoHeight: parentHeight
+        });
+    }
+
     render() {
         return (
             <div>
@@ -62,7 +81,7 @@ class Article extends Component {
                 </div>
 
                 <div style={styles.articleBackground}>
-                    <div style={styles.articleContainer}>
+                    <div style={styles.articleContainer} ref="articleContainer">
                         <p style={styles.articleText}>
                             Here we can see that the cost of using human labor is growing more and more over the year
                             while the cost using robotic labor is decreasing. The robot can do the job more efficiently
@@ -70,6 +89,11 @@ class Article extends Component {
                             helps prevent farmers from being exposed to chemicals that can potentially cause cancer.
                             Again, this is just one of many examples of the benefits of automatic farming technologies.
                         </p>
+
+                        <ReactPlayer url="https://www.youtube.com/watch?v=Rl77FVobxVI"
+                                     width={this.state.videoWidth}
+                                     height={this.state.videoHeight}
+                                     ref="videoPlayer"/>
 
                         <p style={styles.articleText}>
                             People are right to be concerned that these technologies have the possibility of replacing

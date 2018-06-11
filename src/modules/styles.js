@@ -2,13 +2,14 @@ export const styles = {
     titleBox: {
         width: '100%',
         height: '1000px',
-        backgroundColor: 'red'
+        backgroundColor: '#222'
     },
     titleText: {
         textAlign: 'center',
         position: 'relative',
         fontSize: '60px',
         top: '50%',
+        color: 'white'
     },
     tractorImageContainer: {
         width: '50%',
@@ -55,9 +56,40 @@ export const styles = {
     },
     commentInputContainer: {
         margin: '0 auto',
-        width: '35%'
+        width: '35%',
+        marginBottom: '10px'
     },
     commentInputField: {
         width: '100%',
+    },
+    commentButton: {
+        backgroundColor: 'black',
+        alignSelf: 'flexEnd',
+    },
+    commentCellsContainer: {
+        width: '35%',
+        margin: '0 auto',
+        marginBottom: '20px'
+    },
+    commentCellContainer: {
+        width: '100%',
+        paddingTop: '5px',
+        paddingBottom: '5px',
+        paddingLeft: '15px',
+        paddingRight: '15px',
+    },
+    supportButtonContainer: {
+        textAlign: 'center',
+    },
+    supportButton: {
+        fontSize: '20px',
+        
+        color: 'white'
+    },
+    supportModal: {
+        width: '40%'
+    },
+    videoPlayer: {
+        width: '100%'
     }
 };

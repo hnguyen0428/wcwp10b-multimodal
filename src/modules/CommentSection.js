@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
-import {Image} from 'react-bootstrap';
+import {Button, IconButton} from 'react-toolbox/lib/button';
 import {Input} from 'react-toolbox/lib/input';
-import theme from '../toolbox/theme.js';
 import {styles} from './styles';
+
+import {database} from '../config/firebase';
+import moment from 'moment';
+
+import CommentContainer from './CommentContainer';
 
 
 class CommentSection extends Component {
@@ -20,19 +24,44 @@ class CommentSection extends Component {
         });
     };
 
+    onClickComment = () => {
+        if (this.state.commentText !== '') {
+            database.ref('comments').push({
+                comment: this.state.commentText,
+                timestamp: moment.utc().valueOf()
+            })
+                .then((ref) => {
+                    this.setState({
+                        commentText: ''
+                    });
+                });
+        }
+    };
+
     render() {
         return (
             <div>
                 <div style={styles.commentInputContainer}>
                     <Input
-                        theme={theme.RTInput}
                         type='text' multiline maxLength={250}
                         value={this.state.commentText}
                         onChange={this.inputChange}
                         style={styles.commentInputField}
-                        hint="Enter your comment here"
+                        required
+                        placeholder="Enter your comment here"
                     />
+                    <Button
+                        raised
+                        primary
+                        style={styles.commentButton}
+                        onClick={this.onClickComment}
+                    >
+                        Comment
+                    </Button>
                 </div>
+
+                <CommentContainer/>
+
             </div>
         );
     }
