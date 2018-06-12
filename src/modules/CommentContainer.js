@@ -70,7 +70,7 @@ class CommentContainer extends Component {
 
         return (
             <div style={isMobile ? mStyles.commentCellsContainer : styles.commentCellsContainer}>
-                <div style={{overflow: 'auto', maxHeight: 800}}>
+                <div style={styles.commentCellsList}>
                     <ReactList
                         itemRenderer={this.renderItem}
                         length={this.state.comments.length}

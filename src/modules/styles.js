@@ -72,11 +72,15 @@ export const styles = {
         marginBottom: '20px'
     },
     commentCellContainer: {
-        width: '100%',
+        width: '95%',
+        margin: '0 auto',
         paddingTop: '5px',
         paddingBottom: '5px',
-        paddingLeft: '15px',
-        paddingRight: '15px',
+    },
+    commentCellsList: {
+        overflow: 'auto',
+        maxHeight: 800,
+        width: '100%'
     },
     supportButtonContainer: {
         textAlign: 'center',
