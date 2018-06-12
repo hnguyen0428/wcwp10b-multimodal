@@ -7,7 +7,9 @@ class CommentCell extends Component {
     render() {
         return (
             <div style={styles.commentCellContainer}>
-                <p>{this.props.comment}</p>
+                <p style={{whiteSpace: 'pre-wrap'}}>
+                    {this.props.comment}
+                </p>
                 <h5>Posted {this.props.dateCreated}</h5>
             </div>
         );
